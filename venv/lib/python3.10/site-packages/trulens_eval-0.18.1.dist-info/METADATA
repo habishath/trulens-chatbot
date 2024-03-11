@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: trulens-eval
+Version: 0.18.1
+Summary: Library with langchain instrumentation to evaluate LLM based applications.
+Home-page: https://www.trulens.org
+Author: Truera Inc
+Author-email: all@truera.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8,<3.12
+Description-Content-Type: text/markdown
+Requires-Dist: cohere (>=4.4.1)
+Requires-Dist: datasets (>=2.12.0)
+Requires-Dist: python-dotenv (>=1.0.0)
+Requires-Dist: kaggle (>=1.5.13)
+Requires-Dist: langchain (>=0.0.335)
+Requires-Dist: typing-inspect (==0.8.0)
+Requires-Dist: typing-extensions (==4.5.0)
+Requires-Dist: llama-index (>=0.8.69)
+Requires-Dist: merkle-json (>=1.0.0)
+Requires-Dist: millify (>=0.1.1)
+Requires-Dist: openai (<2,>=1.1.1)
+Requires-Dist: pinecone-client (>=2.2.1)
+Requires-Dist: pydantic (<2,>=1.10.7)
+Requires-Dist: humanize (>=4.6.0)
+Requires-Dist: slack-bolt (>=1.18.0)
+Requires-Dist: slack-sdk (>=3.21.3)
+Requires-Dist: streamlit (>=1.27.0)
+Requires-Dist: streamlit-aggrid (>=0.3.4.post3)
+Requires-Dist: streamlit-extras (>=0.2.7)
+Requires-Dist: streamlit-javascript (>=0.1.5)
+Requires-Dist: transformers (>=4.10.0)
+Requires-Dist: frozendict (>=2.3.8)
+Requires-Dist: munch (>=3.0.0)
+Requires-Dist: ipywidgets (>=8.0.6)
+Requires-Dist: numpy (>=1.23.5)
+Requires-Dist: sqlalchemy (>=2.0.19)
+Requires-Dist: alembic (>=1.11.2)
+
+# Welcome to TruLens-Eval!
+
+![TruLens](https://www.trulens.org/assets/images/Neural_Network_Explainability.png)
+
+**Don't just vibe-check your llm app!** Systematically evaluate and track your LLM experiments with TruLens. As you develop your app including prompts, models, retreivers, knowledge sources and more, TruLens-Eval is the tool you need to understand its performance.
+
+Fine-grained, stack-agnostic instrumentation and comprehensive evaluations help you to identify failure modes & systematically iterate to improve your application.
+
+Read more about the core concepts behind TruLens including [Feedback Functions](./core_concepts_feedback_functions.md), [The RAG Triad](./core_concepts_rag_triad.md), and [Honest, Harmless and Helpful Evals](./core_concepts_honest_harmless_helpful_evals.md).
+
+## TruLens in the development workflow
+
+Build your first prototype then connect instrumentation and logging with TruLens. Decide what feedbacks you need, and specify them with TruLens to run alongside your app. Then iterate and compare versions of your app in an easy-to-use user interface 👇
+
+![Architecture Diagram](https://www.trulens.org/assets/images/TruLens_Architecture.png)
+
+## Installation and Setup
+
+Install the trulens-eval pip package from PyPI.
+
+```bash
+    pip install trulens-eval
+```
+
+## Quick Usage
+
+Walk through how to instrument and evaluate a RAG built from scratch with TruLens.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/truera/trulens/blob/main/trulens_eval/examples/quickstart/quickstart.ipynb)
+
+### 💡 Contributing
+
+Interested in contributing? See our [contribution guide](https://github.com/truera/trulens/tree/main/trulens_eval/CONTRIBUTING.md) for more details.
+
+
